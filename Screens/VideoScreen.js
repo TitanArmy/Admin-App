@@ -76,6 +76,7 @@ const VideoPlayer = () => {
                     paused={false}
                     source={{uri: item.url}}
                     style={styles.backgroundVideo}
+                   
                   />
                 </View>
                 <View style={styles.videoDes}>

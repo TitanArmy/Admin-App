@@ -17,10 +17,10 @@ import { Formik } from 'formik';
 export default function EmptyScreens ({navigation}) {
 
 
-  // useEffect(() =>{
-  //   requestUserPermission()
-  //   notificationListner()
-  // }, []);
+  useEffect(() =>{
+    requestUserPermission()
+    notificationListner()
+  }, []);
     
   
   const [downloadurl, setDownloadurl] = useState("https://reactjs.org/logo-og.png")

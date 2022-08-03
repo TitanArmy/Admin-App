@@ -50,7 +50,7 @@ export default function LoginScreen({navigation}) {
     return (
       <>
         <SafeAreaView style={styles.back}>
-          <ScrollView showsVerticalScrollIndicator={false}>
+          {/* <ScrollView showsVerticalScrollIndicator={false}> */}
             <View style={styles.text}>
               <Text style={styles.vin}>VIN</Text>
               <Text style={styles.ove}>OVE</Text>
@@ -58,10 +58,10 @@ export default function LoginScreen({navigation}) {
             <Image
               source={require('../assets/Img/phone.png')}
               style={{
-                height: 130,
-                width: 60,
-                padding: 80,
-                marginTop: 59,
+                height: 10,
+                width: 10,
+                padding: 70,
+                marginTop: 29,
                 marginLeft: 110,
               }}
             />
@@ -74,7 +74,7 @@ export default function LoginScreen({navigation}) {
             <Text style={styles.receive}>
               You Will Receive a 6 digit code for phone number verification
             </Text>
-          </ScrollView>
+          {/* </ScrollView> */}
         </SafeAreaView>
 
         <View style={styles.third}>

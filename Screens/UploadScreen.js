@@ -5,7 +5,6 @@ import {
   View,
   TouchableOpacity,
   ActivityIndicator,
-  Linking,
 } from 'react-native';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import storage from '@react-native-firebase/storage';
@@ -54,24 +53,6 @@ export default function App() {
         });
     }
     );
-
-    // if (!media.didCancel) {
-    //   setUploading(true);
-    //   const reference = storage().ref();
-    //   const task = reference.putFile("media");
-    //   // setUploadTask(task);
-    //   console.log("task......: ",media)
-    //   task.on('state_changed', (taskSnapshot) => {
-    //     // setUploadTaskSnapshot(taskSnapshot);
-    //     // console.log(taskSnapshot)
-    //   });
-    //   task.then(async () => {
-    //     const downloadURL = await reference.getDownloadURL();
-    //     setDownloadURL(downloadURL);
-    //     setUploading(false);
-    //     setUploadTaskSnapshot({});
-    //   });
-    // }
   };
 
   return (
